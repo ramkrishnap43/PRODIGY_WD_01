@@ -7,6 +7,7 @@
 }
 body{
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 nav{
     background: #51c4e0;
@@ -57,7 +58,35 @@ a.home, a:hover{
 #check{
     display: none;
 }
+@media (max-width : 1420px){
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+    /* explore */
+    .explore-content{
+        width: 100%;
 
+    }
+    .tours .col {
+        width: 100%;
+    }    
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    } 
+    .image-gallery img {
+        width: 90%;
+    }  
+    .footer {
+        padding: 10px;
+    }
+}
 @media (max-width: 1005px){
     label.logo{
         font-size: 30px;
@@ -66,6 +95,7 @@ a.home, a:hover{
     nav ul li a{
         font-size: 16px;
     }
+   
 }
 @media (max-width: 974px){
 
@@ -153,8 +183,117 @@ section{
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    /* background-color: aqua; */
 }
 
-.row .col img{
-    width: 80%;
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.events .row{
+    margin-top: 50px ;
+}
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin : 20px auto;
+}
+p{
+    color: #7c7c7c;
+    padding: 0px 40px ;
+}
+
+/* 3rd */
+.explore {
+    width: 100%;
+    height: 80vh;
+    background-image: url("./img//bg2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1{
+    font-size: 7vmin;
+    margin-bottom: 50px;
+}
+.explore-content p {
+    color: rgb(214, 211, 211);
+}
+
+/* 4th */
+
+
+.row .content-col{
+    width: 40%;
+}
+
+.row .image-col{
+    width: 60%;
+}
+
+
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% ;
+    align-items: center;
+}
+.image-gallery img {
+    max-width: 300px ;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+
+/* last */
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: #49497e; 
+    text-align: center;
+}
+.footer p {
+    color: white;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
