@@ -101,6 +101,7 @@ a.home, a:hover{
 }
 @media (max-width: 458px){
     label.logo{
+        position: absolute;
         font-size: 18px;
     }
 }
@@ -110,15 +111,50 @@ a.home, a:hover{
        
     }
 }
-section{
+/* section{
     background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg") no-repeat;
     background-size: cover;
     height: calc(150vh - 30px);
     overflow: hidden;
+} */
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(./img//header-bg.png) ;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
 
-
-
-
-
+.row .col img{
+    width: 80%;
+}
